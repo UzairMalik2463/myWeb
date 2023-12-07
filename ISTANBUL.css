@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d1dedd;
+}
+header{
+    margin: 10px 20px;
+    /* border-bottom: 2px solid #9bacac; */
+    /* margin-bottom: 20px; */
+    color: #ddd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #2b302f;
+}
+li a:hover{
+    color: rgb(114, 61, 61);
+    font-weight: bold;
+}
+h1,h2{
+    color: #2b302f;
+}
+main{
+    background-color: #d1dedd;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    /* gap: 10px; */
+}
+main .div1{
+    background-color: grey;
+    color: #ddd;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    /* grid-template-rows: 0.6fr 4fr; */
+}
+main > .div1 > h1{
+    color:#ddd;
+    font-size: 40px;
+}
+main .div2{
+    background-color: #fff;
+}
+main .div3{
+    background-color: #fff;
+}
+main p,main h1{
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column: span 3; */
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    /* border-top:  2px solid #9bacac; */
+}
+
+@media screen and (max-width:900px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    /* main .div1{
+        grid-column: span 3;
+        display: grid;
+        grid-row: 30px 50px;
+    } */
+    /* main .div2{
+        grid-column: span 3;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px 100px; */
+    /* } */ 
+    /* .sofiyaimg{
+        max-height: 500px;
+        width: 850px;
+    } */
+    main .div3{
+        grid-column: span 2;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    header{
+        display: block;
+    }
+    /* .bazarimg{
+        max-height: 500px;
+        width: 850px;
+    } */
+}
+@media screen and (max-width:700px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 1fr 1fr;
+    }
+    .div1,.div2,.div3{
+        grid-column: span 2;
+    }
+    main .div3{
+        background-color: grey;
+    }
+    .bazarimg{
+        grid-column: span 2;
+    }
+    .smalldiv3{
+        grid-column: span 2;
+    }
+    img{
+        height: 600px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:460px){
+    li{
+        display: block;
+    }
+    ul{
+        margin-left: -40px;
+    }
+}
